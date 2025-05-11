@@ -1,0 +1,83 @@
+#title{
+    color: #F49D37;
+    font-family: "Inria Serif";
+    font-size: 84px !important;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+#nav_btn {
+    color: #F9F3E6;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+}
+
+#nav {
+    background-color: #194059 !important;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #F7F2E4 !important;
+}
+
+#tab {
+    background-color: #f3ede2 !important;
+}
+
+#category_btn {
+    background-color: #e9d8c5;
+    color: #194059;
+    border-color: transparent;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#category_text {
+    font-size: 30px;
+    font-weight: 700;
+    color: #194059;
+}
+
+#promo_text {
+    font-size: 70px !important;
+    color: #194059;
+}
+
+#search_bar{
+    background-color: #2a5772;
+    border-color: #F7F2E4;
+    
+}
+
+#search_btn {
+    background-color: #2a5772;
+    border-color: #F7F2E4;
+    color: #f3ede2;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+#icon {
+    color: #f3ede2;
+    font-size: 32px;
+}
+
+#genre_text {
+    font-size: 80px !important;
+}
+
+#book_title{
+
+}
+
+#author {
+    
+}
