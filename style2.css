@@ -87,5 +87,11 @@ body {
 }
 
 #bestseller {
+    font-size: 30px;
+    font-weight: 700;
+    color: #194059;
+}
 
+#card_body {
+    background-color: #e9d8c5 !important;
 }
