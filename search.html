@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Search Results</title>
+    <meta charset="utf-8" />
+    <meta name="main" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="changing_text.css">
+    <script src="script.js" defer></script> 
+</head>
+
+<body>
+    <header>           
+        <nav class="container-fluid bg-light py-3" id="nav">
+            <div class="d-flex justify-content-between align-items-center px-4">
+                <!-- Left: Header -->
+                <div class="fs-1 fw-bold" id="title">BLÄDDRA</div>
+        
+                <!-- Middle: Navigation + Search -->
+                <div class="d-flex align-items-center gap-4 flex-grow-1 justify-content-center">
+                    <!-- Nav Buttons -->
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-link" id="nav_btn">Hem</button>
+                        <button class="btn btn-link" id="nav_btn">Shop</button>
+                        <button class="btn btn-link" id="nav_btn">Kategorier</button>
+                        <button class="btn btn-link" id="nav_btn">Kontakta Oss</button>
+                    </div>
+        
+                    <!-- Search Bar -->
+                    <form class="d-flex ms-4 w-50">
+                        <input type="text" class="form-control" placeholder="Sök efter en bok eller författare" id="search_bar">
+                        <button class="btn btn-outline-secondary ms-2" id="search_btn">Sök</button>
+                    </form>
+                </div>
+        
+                <!-- Right: Icons -->
+                <div class="d-flex gap-3">
+                    <i class="bi bi-person fs-2" id="icon"></i>
+                    <i class="bi bi-basket fs-2" id="icon"></i>
+                    <i class="bi bi-gear fs-2" id="icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <!-- Search Results Header -->
+        <div class="text-center mb-4">
+            <h2>Your search for "tandkräm" gave 0 results</h2>
+            <p class="text-muted">Try to refine your search</p>
+        </div>
+
+        <div class="row">
+            <!-- Filter Panel (Left) -->
+            <div class="col-md-3">
+                <div class="bg-light p-4 rounded shadow">
+                    <h4 class="mb-3">Filter Results</h4>
+                    
+                    <!-- Price Range -->
+                    <h5 class="fs-6">Price Range</h5>
+                    <input type="range" class="form-range" min="0" max="1000" id="price-range">
+                    
+                    <!-- Categories -->
+                    <h5 class="fs-6 mt-3">Categories</h5>
+                    <div>
+                        <input type="checkbox" id="category1" class="form-check-input">
+                        <label for="category1">Fantasy</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="category2" class="form-check-input">
+                        <label for="category2">Sci-Fi</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="category3" class="form-check-input">
+                        <label for="category3">Romance</label>
+                    </div>
+                    <!-- Add more categories as necessary -->
+                </div>
+            </div>
+
+            <!-- Book List (Right) -->
+            <div class="col-md-9">
+                <div class="d-flex justify-content-between mb-4">
+                    <div>
+                        <button class="btn btn-outline-primary">Price</button>
+                        <button class="btn btn-outline-primary">Name</button>
+                        <button class="btn btn-outline-primary">Release Date</button>
+                    </div>
+                </div>
+
+                <!-- Book List -->
+                <div class="row">
+                    <!-- Book Item -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="assets/ringens-brodraskap.jpg" class="card-img-top" alt="Book 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Ringens Brödraskap</h5>
+                                <p class="card-text text-muted small">J.R.R. Tolkien</p>
+                                <p class="fw-bold">259:-</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeat Book Cards as needed -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="assets/andra-varldskriget.jpg" class="card-img-top" alt="Book 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Andra Världskriget</h5>
+                                <p class="card-text text-muted small">Antony Beevor</p>
+                                <p class="fw-bold">249:-</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- More book cards here... -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left: Business Information -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Bookstore Name</h5>
+                    <p>123 Book St, City, Country</p>
+                    <p>Email: contact@bookstore.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Opening Hours: Mon-Fri 9:00 AM - 6:00 PM</p>
+                </div>
+        
+                <!-- Middle: Links -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Shipping & Returns</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Right: Social Media (Icons) -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-3"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <p class="mb-0">© 2025 Bookstore Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
